@@ -15,14 +15,16 @@
 #include <Arduino.h>
 
 void setup() {
-    pinMode(3, OUTPUT);
+    pinMode(3, OUTPUT); //red
     digitalWrite(3, HIGH);
-    pinMode(4, OUTPUT);
+    pinMode(4, OUTPUT); //green
     digitalWrite(4, HIGH);
-    pinMode(5, OUTPUT);
+    pinMode(5, OUTPUT); //blue
     digitalWrite(5, HIGH);
 }
 
 void loop() {
+    delay(300);
+    digitalWrite(5, LOW);
 
 }
