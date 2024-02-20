@@ -26,10 +26,23 @@ void setup() {
 void loop() {
     delay(300);
     digitalWrite(5, LOW);
-
+// for red led
     delay(1000);
     digitalWrite(3, LOW);
     delay(1000);
     digitalWrite(3, HIGH);
+//for green led
+    delay(500);
+    digitalWrite(4, LOW);
+    delay(500);
+    digitalWrite(4, HIGH);
+
+    
+    if (digitalRead(4) ==LOW)
+    pinMode(5, OUTPUT);
+    digitalWrite(4, HIGH);
+
+
+
 
 }
